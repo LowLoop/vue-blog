@@ -9,8 +9,8 @@
 > 注意,要在后端服务器配置跨域.否则数据方面的请求会失败.
 > express的配置方法可以访问 https://github.com/LowLoop/node-express-blog
 里面的app.js文件(里面有注释.Ctrl+F 搜索跨域)
-设置允许跨域访问的方法不止一种.
-其它的方法可自行搜索.
+> 设置允许跨域访问的方法不止一种.
+> 其它的方法可自行搜索.
 > 顺便分享个fan qiang的链接
 http://www.tianyaseo.com/post-183.html
 找里面分享的hosts文件.替换你本机.然后刷新dns缓存.就可以fan qiang 了.
