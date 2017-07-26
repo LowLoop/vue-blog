@@ -13,59 +13,12 @@
     <script src="https://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-    <!-- bootstrap validator -->
-    <link href="http://cdn.bootcss.com/bootstrap-validator/0.5.3/css/bootstrapValidator.min.css" rel="stylesheet"/>
-    <script src="http://cdn.bootcss.com/bootstrap-validator/0.5.3/js/bootstrapValidator.min.js"></script>
-
-    <!-- jcrop 图片裁剪插件 -->
-    <link href="https://cdn.bootcss.com/jquery-jcrop/0.9.12/css/jquery.Jcrop.min.css" rel="stylesheet"/>
-
     <!-- Clamp.js(用来解决兼容多浏览器 多行文本显示加省略号的问题.) -->
     <script src="https://cdn.bootcss.com/Clamp.js/0.5.1/clamp.min.js"></script>
 
     <!-- 自定义的一些css,js文件 -->
-    <link rel="stylesheet" href="http://localhost:3000/static/public/css/animate.min.css"/>
     <link rel="stylesheet" href="http://localhost:3000/static/public/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="http://localhost:3000/static/public/css/index.css"/>
-    <link rel="stylesheet" href="http://localhost:3000/static/public/css/profile.css"/>
-    <link rel="stylesheet" href="http://localhost:3000/static/public/css/sweetalert.css"/>
-
-    <!-- js -->
-    <script src="https://cdn.bootcss.com/jquery-jcrop/0.9.12/js/jquery.Jcrop.min.js"></script>
-    <script src="http://localhost:3000/static/public/javascripts/animation.js"></script>
-    <script src="http://localhost:3000/static/public/javascripts/floatBtns.js"></script>
-    <!--<script src="http://localhost:3000/static/public/javascripts/j_profile.js"></script>-->
-    <script src="http://localhost:3000/static/public/javascripts/j_signInUp.js"></script>
-    <script src="http://localhost:3000/static/public/javascripts/j_validator.js"></script>
-    <script src="http://localhost:3000/static/public/javascripts/sweetalert.min.js"></script>
-
-    <link href="https://cdn.bootcss.com/nprogress/0.2.0/nprogress.min.css" rel="stylesheet"/>
-    <script src="https://cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
-
-    <script>
-      function getCookie(name) {
-        var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
-        if(arr=document.cookie.match(reg)){
-          return decodeURI(arr[2]);
-        }else{
-          return null;
-        }
-      }
-      $(function(){
-        var dom = document.getElementById("novelCon");
-        $clamp(dom,{clamp:2});
-        $("#click").click(function(){
-          var exp = new Date();
-          exp.setTime(exp.getTime() - 1);
-          var cval=getCookie("myUser");
-          if(cval!=null){
-            document.cookie= "myUser" + "="+cval+";expires="+exp.toGMTString();
-            alert("删除成功");
-          }
-        });
-
-      });
-    </script>
   </head>
   <body>
     <div id="app"></div>
