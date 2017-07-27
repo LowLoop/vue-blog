@@ -13,7 +13,3 @@
 > 设置允许跨域访问的方法不止一种.
 
 > 其它的方法可自行搜索.
-
-> 顺便分享个fan qiang的链接
-http://www.tianyaseo.com/post-183.html
-找里面分享的hosts文件.替换你本机.然后刷新dns缓存.就可以fan qiang 了.
