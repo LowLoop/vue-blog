@@ -33,7 +33,7 @@
         <li class="disabled controls">
           <a>跳转至<input type="text" v-model="toPageVal"
                       @keyup="keyupPageFn(toPageVal)">页.
-            每页2条数据.
+            每页{{indexData.size}}条数据.
             总共{{indexData.pageObj.pageSize}}页.
             总共{{indexData.pageObj.totalSize}}条数据.
           </a>
