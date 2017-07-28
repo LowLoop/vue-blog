@@ -1,9 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import index from '@/components/index'
-import profileIndex from '../components/profileIndex'
-import indexContent from '../components/content'
-import readNofel from '../components/readNovel'
+import index from '@/components/iview/iviewIndex'
 
 Vue.use(Router)
 
@@ -13,7 +10,7 @@ export default new Router({
     {
       path: '/',
       name: 'index',
-      component: index,
+      component: index/*,
       children: [
         {
           path: 'index',
@@ -30,7 +27,7 @@ export default new Router({
           name: 'readNovel',
           component: readNofel
         }
-      ]
+      ]*/
     }
   ]
 })
