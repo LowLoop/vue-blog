@@ -25,6 +25,9 @@
                 </a>
               </div>
             </div>
+            <div class="layout-copy">
+              2017- &copy; NagatoYuki
+            </div>
             <!--<div class="info">
               <ul class="tabs">
                 <li :class="{'active': $route.path == '/home/showArticleList'}">
@@ -65,9 +68,6 @@
               内容区域<br>内容区域<br>内容区域<br>内容区域<br>内容区域<br>内容区域<br>
               内容区域<br>内容区域<br>内容区域<br>内容区域<br>内容区域<br>内容区域<br>
             </div>
-          </div>
-          <div class="layout-copy">
-            2017- &copy; NagatoYuki
           </div>
         </div>
 

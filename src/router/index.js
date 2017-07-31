@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import index from '@/components/iview/iviewIndex'
+import novelList from '@/components/iview/ivnovelList'
 
 Vue.use(Router)
 
@@ -10,24 +11,14 @@ export default new Router({
     {
       path: '/',
       name: 'index',
-      component: index/*,
+      component: index,
       children: [
         {
-          path: 'index',
-          name: 'indexContent',
-          component: indexContent
-        },
-        {
-          path: 'user/profile',
-          name: 'profile',
-          component: profileIndex
-        },
-        {
-          path: 'readNovel',
-          name: 'readNovel',
-          component: readNofel
+          path: 'novelList',
+          name: 'novelList',
+          component: novelList
         }
-      ]*/
+      ]
     }
   ]
 })
