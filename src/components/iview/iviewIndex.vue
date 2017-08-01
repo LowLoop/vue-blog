@@ -45,30 +45,7 @@
           </div>
         </div>
         <div class="content-left">
-          <div class="layout-breadcrumb">
-            <Breadcrumb>
-              <Breadcrumb-item href="#">首页</Breadcrumb-item>
-              <Breadcrumb-item href="#">什么板块/列表</Breadcrumb-item>
-              <Breadcrumb-item>某个东西</Breadcrumb-item>
-            </Breadcrumb>
-          </div>
-          <div class="layout-content">
-            <div class="layout-content-main">
-              内容区域<br>内容区域<br>内容区域<br>内容区域<br>
-              内容区域<br>内容区域<br>内容区域<br>内容区域<br>内容区域<br>内容区域<br>
-              内容区域<br>内容区域<br>内容区域<br>内容区域<br>内容区域<br>内容区域<br>
-              内容区域<br>内容区域<br>内容区域<br>内容区域<br>内容区域<br>内容区域<br>
-              内容区域<br>内容区域<br>内容区域<br>内容区域<br>内容区域<br>内容区域<br>
-              内容区域<br>内容区域<br>内容区域<br>内容区域<br>内容区域<br>内容区域<br>
-              内容区域<br>内容区域<br>内容区域<br>内容区域<br>内容区域<br>内容区域<br>
-              内容区域<br>内容区域<br>内容区域<br>内容区域<br>内容区域<br>内容区域<br>
-              内容区域<br>内容区域<br>内容区域<br>内容区域<br>内容区域<br>内容区域<br>
-              内容区域<br>内容区域<br>内容区域<br>内容区域<br>内容区域<br>内容区域<br>
-              内容区域<br>内容区域<br>内容区域<br>内容区域<br>内容区域<br>内容区域<br>
-              内容区域<br>内容区域<br>内容区域<br>内容区域<br>内容区域<br>内容区域<br>
-              内容区域<br>内容区域<br>内容区域<br>内容区域<br>内容区域<br>内容区域<br>
-            </div>
-          </div>
+          <router-view></router-view>
         </div>
 
       </Row>
@@ -83,6 +60,9 @@
         showIndex: 1
       }
     },
+    /*mounted: function () {
+      this.$store.dispatch('LOAD_INDEX_DATA')
+    },*/
     methods: {
       toggle() {
       }
@@ -313,7 +293,6 @@
     position: fixed;
     text-align: center;
     padding: 10px 0 20px;
-    color: #9ea7b4;
     bottom: 0;
   }
   .layout-ceiling{

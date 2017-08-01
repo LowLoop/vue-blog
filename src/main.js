@@ -3,11 +3,22 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-
-import iView from 'iview';
+import iView from 'iview';//iview ui库
 import 'iview/dist/styles/iview.css';    // 使用 CSS
-
+import store from './vuex/store.js'
+/*import IScrollView from 'vue-iscroll-view'
+import IScroll from 'iscroll'
+Vue.use(IScrollView, IScroll)*/
 Vue.use(iView);
+
+router.beforeEach((to, from, next) => {
+  iView.LoadingBar.start();
+  next();
+});
+
+router.afterEach((to, from, next) => {
+  iView.LoadingBar.finish();
+});
 
 Vue.config.productionTip = false
 
@@ -15,6 +26,7 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
+  store,
   template: '<App/>',
   components: { App }
 })
