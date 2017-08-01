@@ -96,7 +96,7 @@
     justify-content: center;
     align-items: center;
   .user-img {
-    background: url(../../../static/public/uploads/headPortrait19.jpg) no-repeat;
+    background: url(../../../static/public/uploads/nerv.jpg) no-repeat;
     background-size: 150px 150px;
     width: 150px;
     height: 150px;
