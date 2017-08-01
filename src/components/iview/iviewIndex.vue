@@ -3,8 +3,10 @@
     <div class="layout">
       <div class="layout-ceiling">
         <div class="layout-ceiling-main">
-          <a href="#">私について</a> |
-          <a href="#">ヘルプセンター</a>
+          <!--<a href="#">私について</a> |-->
+          <!--<a href="#">ヘルプセンター</a>-->
+          <a @click="toNovelList()">那啥列表</a> |
+          <a @click="toSelf()">关于我</a>
         </div>
       </div>
       <Row type="flex">
@@ -64,7 +66,11 @@
       this.$store.dispatch('LOAD_INDEX_DATA')
     },*/
     methods: {
-      toggle() {
+      toNovelList(){
+        this.$router.push({path:'novelList'});
+      },
+      toSelf(){
+        this.$router.push({path:'self'});
       }
     }
   }
@@ -73,7 +79,7 @@
   .side {
     /*position: fixed;
     left: 0;*/
-    height: 100%;
+    /*height: 100%;*/
     /*background-color: rgba(0, 0, 0, .6);*/
     /*background: hsla(0,0%,100%,.6);*/
     background:rgba(210,210,211,0.4);
