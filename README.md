@@ -1,5 +1,5 @@
 # vue-blog
-# 用到了 vue-router, axios
+# 用到了 vuex,vue-router,axios,iview...
 
 ## 启动命令
 > npm run dev 然后访问 localhost:3000 (这是开发环境).端口号可以在 config/index.js里修改.
