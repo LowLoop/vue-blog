@@ -12,6 +12,10 @@ export default {
 </script>
 
 <style>
+  body {
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background: url("../static/public/images/icon/bg-container.png");
+  }
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

@@ -4,6 +4,7 @@ import index from '@/components/iview/iviewIndex'
 import novelList from '@/components/iview/ivnovelList'
 import readNovel from '@/components/readNovel'
 import self from '@/components/iview/self'
+import addNovel from '@/components/iview/addNovel'
 
 Vue.use(Router)
 
@@ -29,6 +30,11 @@ export default new Router({
           path: 'self',
           name: 'self',
           component: self
+        },
+        {
+          path: 'addNovel',
+          name: 'addNovel',
+          component: addNovel
         }
       ]
     }

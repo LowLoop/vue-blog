@@ -8,9 +8,12 @@
       </Breadcrumb>
     </div>
     <div class="layout-content">
-      <div class="layout-content-main">
-        <h2>其实你看到的都是假的</h2>
-      </div>
+      <Timeline>
+        <Timeline-item color="green">1.小水管服务器</Timeline-item>
+        <Timeline-item color="green">2.所以,不开放注册/登录</Timeline-item>
+        <Timeline-item color="blue">3.为什么要用这种时间轴的样式写这些话</Timeline-item>
+        <Timeline-item color="blue">4.因为我没有一点美术细胞.写不出好看的UI a a a !</Timeline-item>
+      </Timeline>
     </div>
   </div>
 </template>
@@ -45,6 +48,7 @@
     background: #fff;
     border-radius: 4px;
     background: hsla(0,0%,100%,.6);
+    padding:5px;
   }
   @keyframes change {
     0% {
@@ -54,5 +58,17 @@
       width: 100%;
     }
   }
+  .time{
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .vertical-center-modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+  .ivu-modal{
+    top: 0;
+  }
+  }
 </style>

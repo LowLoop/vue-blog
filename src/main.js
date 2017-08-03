@@ -9,6 +9,9 @@ import store from './vuex/store.js'
 /*import IScrollView from 'vue-iscroll-view'
 import IScroll from 'iscroll'
 Vue.use(IScrollView, IScroll)*/
+import VueSimplemde from 'vue-simplemde'//md富文本
+
+Vue.use(VueSimplemde)
 Vue.use(iView);
 
 router.beforeEach((to, from, next) => {

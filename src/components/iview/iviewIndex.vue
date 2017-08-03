@@ -6,6 +6,7 @@
           <!--<a href="#">私について</a> |-->
           <!--<a href="#">ヘルプセンター</a>-->
           <a @click="toNovelList()">那啥列表</a> |
+          <a @click="toAddNovel()">发表文章</a> |
           <a @click="toSelf()">关于我</a>
         </div>
       </div>
@@ -71,6 +72,9 @@
       },
       toSelf(){
         this.$router.push({path:'self'});
+      },
+      toAddNovel(){
+        this.$router.push({path:'addNovel'});
       }
     }
   }
