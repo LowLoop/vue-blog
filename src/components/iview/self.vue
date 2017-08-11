@@ -12,7 +12,7 @@
         <Timeline-item color="green">1.小水管服务器</Timeline-item>
         <Timeline-item color="green">2.所以,不开放注册/登录</Timeline-item>
         <Timeline-item color="blue">3.为什么要用这种时间轴的样式写这些话</Timeline-item>
-        <Timeline-item color="blue">4.因为我没有一点美术细胞.写不出好看的UI a a a !</Timeline-item>
+        <Timeline-item color="blue">4.因为XXX所以XXX</Timeline-item>
       </Timeline>
     </div>
   </div>

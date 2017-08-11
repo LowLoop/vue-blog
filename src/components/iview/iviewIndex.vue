@@ -47,11 +47,14 @@
             </div>-->
           </div>
         </div>
-        <div class="content-left">
-          <router-view></router-view>
-        </div>
 
+        <Col span="22" offset="8">
+          <div class="content-left">
+            <router-view></router-view>
+          </div>
+        </Col>
       </Row>
+
     </div>
     <Back-top></Back-top>
   </div>
@@ -81,14 +84,15 @@
 </script>
 <style scoped lang="less">
   .side {
-    /*position: fixed;
-    left: 0;*/
-    /*height: 100%;*/
+    position: fixed;
+    left: 0;
+    height: 100%;
     /*background-color: rgba(0, 0, 0, .6);*/
     /*background: hsla(0,0%,100%,.6);*/
     background:rgba(210,210,211,0.4);
     display: block;
     width: 30%;
+    z-index:9999999;
   .container {
     width: 100%;
     margin: 100px auto 0;

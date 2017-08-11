@@ -340,9 +340,10 @@
     display: inline-block;
   }
   .spinner {
-    margin: 100px auto;
+    margin-left: 30%;
     width: 50px;
     height: 60px;
+    line-height:500px;
     text-align: center;
     font-size: 10px;
   }
@@ -399,7 +400,7 @@
     text-align: center;
     background: rgba(0,0,0,0.4);
     right:0;
-    top:30px;
+    top:0;
   }
 
 </style>

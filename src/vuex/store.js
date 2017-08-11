@@ -35,4 +35,17 @@ const store = new Vuex.Store({
     }
   }
 });
-export default store
+
+const store2 = new Vuex.Store({}) // 这里你可能已经有其他 module
+
+store2.registerModule('vux', { // 名字自己定义
+  state: {
+    isLoading: false
+  },
+  mutations: {
+    updateLoadingStatus (state, payload) {
+      state.isLoading = payload.isLoading
+    }
+  }
+})
+export default store2
